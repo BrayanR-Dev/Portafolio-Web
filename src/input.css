@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("'https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-pacifico: "Pacifico", cursive;
+    --font-ubuntu: "Ubuntu Sans Mono", monospace;
+}
+/* Ocultar scrollbar en todos los navegadores */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* Internet Explorer y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
