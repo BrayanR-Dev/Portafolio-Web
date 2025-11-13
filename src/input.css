@@ -3,15 +3,37 @@
 @import "tailwindcss";
 
 @theme {
-    --font-pacifico: "Pacifico", cursive;
-    --font-ubuntu: "Ubuntu Sans Mono", monospace;
+  --font-pacifico: "Pacifico", cursive;
+  --font-ubuntu: "Ubuntu Sans Mono", monospace;
 }
+
 /* Ocultar scrollbar en todos los navegadores */
 .scrollbar-hidden::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
+  display: none;
+  /* Chrome, Safari y Opera */
 }
 
 .scrollbar-hidden {
-  -ms-overflow-style: none;  /* Internet Explorer y Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer y Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@keyframes bounce-soft {
+
+  0%,
+  100% {
+    transform: translateY(-3%);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 3s infinite;
 }
